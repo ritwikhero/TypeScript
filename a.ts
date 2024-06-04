@@ -24,11 +24,11 @@ console.log(sum(5,6));
 
 //return if person is 18+ or not
 
-function isLegal(age : number){
+function isLegal(age : number): boolean{
     if(age > 18){
         return true;
     }
-    else false;
+    else return false;
 }
 
 let value : number = 69;
