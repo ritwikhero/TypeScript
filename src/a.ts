@@ -34,3 +34,29 @@ function isLegal(age : number): boolean{
 let value : number = 69;
 console.log(isLegal(value));
 // Create a function that takes another function as input, and runs it after 1 second.
+
+
+//target in cofig file lets us us the es version on which our site are going to build
+
+//Assignment 1
+interface User{
+    firstName : String;
+    lastName : String;
+    age : Number;
+    email: String;
+}
+
+const user : object = {
+    firstName : "Ritwik",
+    lastName : "Singh",
+    age : 26,
+    email : "Ritwikhero@gmail.com"
+}
+
+function isLegal2(user : User): boolean{
+    if(user.age > 18){
+        return true;
+    }
+    else return false;
+}
+console.log(isLegal2(user));
