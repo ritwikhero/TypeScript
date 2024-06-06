@@ -16,14 +16,32 @@ function sum(a, b) {
     return a + b;
 }
 console.log(sum(5, 6));
-
 //return if person is 18+ or not
 function isLegal(age) {
     if (age > 18) {
         return true;
     }
     else
-        false;
+        return false;
 }
 let value = 69;
 console.log(isLegal(value));
+// const user : object = {
+//     firstName : "Ritwik",
+//     lastName : "Singh",
+//     age : 26,
+//     email : "Ritwikhero@gmail.com"
+// }
+function isLegal2(user) {
+    if (user.age > 18) {
+        return true;
+    }
+    else
+        return false;
+}
+console.log(isLegal2({
+    firstName: "Ritwik",
+    lastName: "Singh",
+    age: 26,
+    email: "Ritwikhero@gmail.com"
+}));

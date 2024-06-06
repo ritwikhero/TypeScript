@@ -42,16 +42,16 @@ console.log(isLegal(value));
 interface User{
     firstName : String;
     lastName : String;
-    age : Number;
+    age : number;
     email: String;
 }
 
-const user : object = {
-    firstName : "Ritwik",
-    lastName : "Singh",
-    age : 26,
-    email : "Ritwikhero@gmail.com"
-}
+// const user : object = {
+//     firstName : "Ritwik",
+//     lastName : "Singh",
+//     age : 26,
+//     email : "Ritwikhero@gmail.com"
+// }
 
 function isLegal2(user : User): boolean{
     if(user.age > 18){
@@ -59,4 +59,9 @@ function isLegal2(user : User): boolean{
     }
     else return false;
 }
-console.log(isLegal2(user));
+console.log(isLegal2({
+    firstName : "Ritwik",
+    lastName : "Singh",
+    age : 26,
+    email : "Ritwikhero@gmail.com"
+}));
